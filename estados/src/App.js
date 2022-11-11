@@ -1,50 +1,42 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useState } from "react";
+import "./App.css";
+// import { useState } from "react";
+import Navbar from "./Navbar";
+import Publicitario from "./Publicitario";
 
 function App() {
-  const [eda, setEda] = useState(0); // se crear el estado, mas el metodo o funcion que permite cambiar el estado, mas el parametro del valor inicial
-  const incrementarEdad = () => {
-    setEda(eda + 1); //aqui se usa el metodo
-  };
+  // const [eda, setEda] = useState(0); // se crear el estado, mas el metodo o funcion que permite cambiar el estado, mas el parametro del valor inicial
+  // const incrementarEdad = () => {
+  //   setEda(eda + 1); //aqui se usa el metodo
+  // };
 
-  const [clicks, setClicks] = useState(0);
-  const incrementarClick = () => {
-    setClicks(clicks + 1);
-  };
+  // const [clicks, setClicks] = useState(0);
+  // const incrementarClick = () => {
+  //   setClicks(clicks + 1);
+  // };
   
-  const [clicksResta, setClicksResta] = useState(clicks);
-  const restarClick = () => {
-    setClicksResta(clicksResta - 1);
-  };
+  // const [clicksResta, setClicksResta] = useState(clicks);
+  // const restarClick = () => {
+  //   setClicksResta(clicksResta - 1);
+  // };
 
-  const [nombre, setNombre] = useState("");
-  const [edad, setEdad] = useState(0);
+  // const [nombre, setNombre] = useState("");
+  // const [edad, setEdad] = useState(0);
 
-  const actualizarNombre = (e) => {
-    setNombre(e.target.value); // recibe el evento
-  };
+  // const actualizarNombre = (e) => {
+  //   setNombre(e.target.value); // recibe el evento
+  // };
 
-  const actualizarEdad = (e) => {
-    setEdad(e.target.value); // recibe el evento
-  };
+  // const actualizarEdad = (e) => {
+  //   setEdad(e.target.value); // recibe el evento
+  // };
 
   return (
     <div className="App">
+      <Navbar/>
+      <Publicitario/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <p>Nombre: {nombre}</p>
+        {/* <p>Nombre: {nombre}</p>
         <input onChange={actualizarNombre} />
         <p>Edad: {edad}</p>
         <input onChange={actualizarEdad} />
@@ -55,7 +47,7 @@ function App() {
         </p>
         <p onClick={restarClick}>
           y aqui puedes restar los click que has dado!
-        </p>
+        </p> */}
       </header>
     </div>
   );

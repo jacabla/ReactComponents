@@ -1,0 +1,14 @@
+.mainP{
+  display: flex;
+  justify-content: center;
+}
+
+.heroP{
+  width: 60%;
+  height: 300px;
+}
+
+img{
+  width: 80%;
+  max-height: 100%;
+}
