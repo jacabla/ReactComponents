@@ -1,0 +1,47 @@
+.contenidoMain {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.contenidoFlex {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 60%;
+  background: linear-gradient(to right, rgb(0 0 0 / 0.9), rgb(0 0 0 / 0)),
+    url("/Users/jason/Desktop/React/useState/estados/src/images/img4.jpeg");
+  background-size: 100% 100%;
+  border-radius: 15px;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    color: antiquewhite;
+}
+
+.imgGrid{
+    width: 100%;
+    height: 200px;
+}
+
+.gridImg{
+    text-justify: distribute;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;  
+}
+
+.descripcion{
+    width: 100%;
+    height: 80px;
+}
+
+.contenidoDescripcion{
+    height: 250px;
+    color: antiquewhite;
+}
+.h3{
+    font-family: 'Tangerine', cursive;
+}
